@@ -19,30 +19,29 @@ We also give you a handy crypto class (described below) to help you build reques
 
 ### Let's get started
 
-All of the steps will involve using the Admin API docs.
+All of the steps will involve using the Player API docs.
 
-You'll start off by creating a player with the API.
+We've created a player for you as well as a rule, a badge and some avatar components.
 
-We'd like to see the information about your player, so you'll need to display some information about your player including, their name, the number of points they have and any achievements they might have.
+We'd like you to :
 
-We'll need to create a point type, it can be called whatever you like.
+1: Connect to the GameServer and retrieve the player data, render it in an exciting and cool way. Be sure to show the player name, points and any achievements they have unlocked.
 
-You'll then need to create a rule, which will contain one predicate and one consequent. The predicate for this rule should be triggered when an external event is created. The consequent should award some number of points, of the point type you created in step 2.
+2: We created an external event called 'Magic' we'd like you to post that event to the server (maybe in response to a button push).  In your response you should get a message showing that the points total has increased. Show the player that this has happened in an interesting way.
 
-Now you will need to create an external event, once that is created, you need to log that external event against the player. This should trigger the rule you made in step 3 and award the number of points to that player
+3: We created another external event called 'Rainbow' which will result in the player being awarded with an achievement.  Make a nice animation to show that this happened.
 
-Now you need to create a new piece of functionality, players can now have something called an accessory (this is not in the API, you will be building this) An accessory can be a shield or a sword, or some thing that a player might equip, build a model and create some appropriate fields that an accessory might have. A page will be needed to display all the accessories a player has available. To help we will also need an API for creating and updating accessories.
+4: Extra Credit!  Players have avatars which have compoenents which have options.  GameServer doesn't care too much waht any of this means. Your Player has an avatar with a 'Top' and 'Bottom' component. 'Top' components have two options, as do 'Bottom' components.  Think of a graphical way to render an avatar based on the specific combination of 'Top' and 'Bottom'.  Allow the player to change these in a graphical way and post the updated avatar details back to teh server.
 
-Show us some other ways you could interact with the api i.e. creating a badge or creating more players and displaying a leaderboard.
-
-If you can do some cool animations or transitions in the UI, all the better.
 
 ### Outcomes
 
 It would be great if we could see:
 
 Your resulting app running on an iDevice of your choice
+
 A github repo that we can look at to see your code base
+
 And some tests around some of the functionality you've created
 
 
