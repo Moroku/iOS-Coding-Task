@@ -7,7 +7,7 @@ The purpose of this exercise is to showcase your iOS skills to show us you know 
 
 We've setup a series of tasks for you to complete that will test the things we're looking for.
 
-You'll be communicating with the Moroku GameSystem. The GameSystem Server is a Ruby on Rails application that provides gamification to clients via APIs built here at Moroku. You'll be interacting with GameSystem via our API. Take a look at the ![client](http://docs.gamesystemclientapi.apiary.io/#) and ![admin](http://docs.gamesystemadminapi.apiary.io/#) API docs. on Apiary.
+You'll be communicating with the Moroku GameSystem. The GameSystem Server is a Ruby on Rails application that provides gamification to clients via APIs built here at Moroku. You'll be interacting with GameSystem via our API. Take a look at the [client](http://docs.gamesystemclientapi.apiary.io/#) and [admin](http://docs.gamesystemadminapi.apiary.io/#) API docs. on Apiary.
 
 If something is not clear (or in the unfortunate case, if something is not working) please email dave@moroku.com
 
