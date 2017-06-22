@@ -13,25 +13,24 @@ If something is not clear (or in the unfortunate case, if something is not worki
 
 ### What you get
 
-You'll be given an API token and shared secret to allow making requests to the admin API
+You'll be given an API token and shared secret for both the Admin API and the Player (client) API to allow you to make requests to the server.
 
 We also give you a handy crypto class (described below) to help you build requests for the server
 
 ### Let's get started
 
-All of the steps will involve using the Player API docs.
 
 We've created a player for you as well as a rule, a badge and some avatar components.
 
 We'd like you to :
 
-1: Connect to the GameServer and retrieve the player data, render it in an exciting and cool way. Be sure to show the player name, points and any achievements they have unlocked.
+1: Connect to the GameServer and retrieve the player data, render it in an exciting and cool way. Be sure to show the player name, points and any achievements they have unlocked. (Use the player key and api token : Get Player/ryan)
 
-2: We created an external event called 'Magic' we'd like you to post that event to the server (maybe in response to a button push).  In your response you should get a message showing that the points total has increased. Show the player that this has happened in an interesting way.
+2: We created an external event called 'Magic' we'd like you to post that event to the server (maybe in response to a button push).  In your response you should get a message showing that the points total has increased. Show the player that this has happened in an interesting way. (Use the admin key and api token : POST External_event)
 
-3: We created another external event called 'Rainbow' which will result in the player being awarded with an achievement.  Make a nice animation to show that this happened.
+3: We created another external event called 'Rainbow' which will result in the player being awarded with an achievement.  Make a nice animation to show that this happened. (Use the admin key and api token : POST External_event )
 
-4: Extra Credit!  Players have avatars which have compoenents which have options.  GameServer doesn't care too much waht any of this means. Your Player has an avatar with a 'Top' and 'Bottom' component. 'Top' components have two options, as do 'Bottom' components.  Think of a graphical way to render an avatar based on the specific combination of 'Top' and 'Bottom'.  Allow the player to change these in a graphical way and post the updated avatar details back to teh server.
+4: Extra Credit!  Players have avatars which have components which have options.  GameServer doesn't care too much what any of this means. Your Player has an avatar with a 'Top' and 'Bottom' component. 'Top' components have two options, as do 'Bottom' components.  Think of a graphical way to render an avatar based on the specific combination of 'Top' and 'Bottom'.  Allow the player to change these in a graphical way and post the updated avatar details back to the server. (Use the player key and api token : Update Player)
 
 
 ### Outcomes
