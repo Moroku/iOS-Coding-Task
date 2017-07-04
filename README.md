@@ -1,5 +1,5 @@
 # iOS-Coding-Task
-Coding task for iOS Developer Role Applicants 
+Coding task for iOS Developer Role Applicants
 
 
 ## The Task
@@ -24,7 +24,7 @@ We've created a player for you as well as a rule, a badge and some avatar compon
 
 We'd like you to :
 
-1: Connect to the GameServer and retrieve the player data, render it in an exciting and cool way. Be sure to show the player name, points and any achievements they have unlocked. (Use the player key and api token : Get Player/ryan)
+1: Connect to the GameServer and retrieve the player data, render it in an exciting and cool way. Be sure to show the player name, points and any achievements they have unlocked. (Use the player key and api token : Get Players/<tenant>)
 
 2: We created an external event called 'Magic' we'd like you to post that event to the server (maybe in response to a button push).  In your response you should get a message showing that the points total has increased. Show the player that this has happened in an interesting way. (Use the admin key and api token : POST External_event)
 
@@ -56,14 +56,14 @@ Here's how you use it:
 	// Grab the API Key
     NSString *apiKey 		= MY_API_KEY;
     NSString *sharedSecret  = MY_SHARED_SECRET;
-            
+
     CryptoUtil *cryptor = [[CryptoUtil alloc] init];
-            
+
     NSDictionary *cryptDict = [cryptor generateHMACWithContent:request.payload
                                                   resourcePath:request.resourcePath
                                                     httpMethod:request.method
                                                      secretKey:sharedSecret];
-            
+
 	// Build HTTP request for API
 	// Set Content-MD5: header to          [cryptDict objectForKey:kBase64Md5Content]
 	// Set Authorization: header to    	  MY_API_KEY:[cryptDict objectForKey:kHmacSha1]
@@ -73,7 +73,7 @@ And submit request.
 
 
 ## HMAC Documentation
-The GameSystem Server API is secured with an API key and shared secret. 
+The GameSystem Server API is secured with an API key and shared secret.
 
 The shared secret is used to generate a hashed-key message authentication code (HMAC) which is transmitted with each API request.  On receiving an API request, the Game Server dereferences the API key to obtain the user’s shared secret and then validates the HMAC component of the Authorization field.
 
@@ -92,9 +92,9 @@ HMAC Generation
 5. Construct plain text by concatenating the following values, in this order, separated by ‘\n’
 	* Date-time stamp from step 3
 	* Base64 encoded MD5 hash from step 1
-	* Resource Path for the API call, any request query parameters should be stripped from the path first. 
+	* Resource Path for the API call, any request query parameters should be stripped from the path first.
 	* HTTP method (in upper case)
-    
+
 6.  Using the secret key, construct a HMAC-SHA-1 of the plain text from step 5
 7.  Set the Authorization header to the value API_KEY : HMAC*
 
