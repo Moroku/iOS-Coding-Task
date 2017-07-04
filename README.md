@@ -24,7 +24,7 @@ We've created a player for you as well as a rule, a badge and some avatar compon
 
 We'd like you to :
 
-1: Connect to the GameServer and retrieve the player data, render it in an exciting and cool way. Be sure to show the player name, points and any achievements they have unlocked. (Use the player key and api token : Get Players/<tenant>)
+1: Connect to the GameServer and retrieve the player data, render it in an exciting and cool way. Be sure to show the player name, points and any achievements they have unlocked. (Use the player key and api token : Get Players/`<player_name>`)
 
 2: We created an external event called 'Magic' we'd like you to post that event to the server (maybe in response to a button push).  In your response you should get a message showing that the points total has increased. Show the player that this has happened in an interesting way. (Use the admin key and api token : POST External_event)
 
