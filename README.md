@@ -19,16 +19,15 @@ We also give you a handy crypto class (described below) to help you build reques
 
 ### Let's get started
 
-
 We've created a player for you as well as a rule, a badge and some avatar components.
 
 We'd like you to :
 
-1: Connect to the GameServer and retrieve the player data, render it in an exciting and cool way. Be sure to show the player name, points and any achievements they have unlocked. (Use the player key and api token : Get Players/`<player_name>`)
+1: Connect to the GameServer and retrieve the player data, render it in an exciting and cool way. Be sure to show the player name, points and any achievements they have unlocked. (Use the player key and api token : Get players/<player_id>)
 
-2: We created an external event called 'Magic' we'd like you to post that event to the server (maybe in response to a button push).  In your response you should get a message showing that the points total has increased. Show the player that this has happened in an interesting way. (Use the admin key and api token : POST External_event)
+2: We created an external event called 'Magic' we'd like you send that event to the server for the chosen player (maybe in response to a button push).  In your response you should get a message showing that the points total has increased. Show the player that this has happened in an interesting way. (Use the admin key and api token : POST admin/player_external_events). Not ethat this request requires the player name and event id to be subimtted rather than player id.
 
-3: We created another external event called 'Rainbow' which will result in the player being awarded with an achievement.  Make a nice animation to show that this happened. (Use the admin key and api token : POST External_event )
+3: We created another external event called 'Rainbow' which will result in the player being awarded with an achievement.  Make a nice animation to show that this happened. (Use the admin key and api token : POST admin/player_external_event )
 
 4: Extra Credit!  Players have avatars which have components which have options.  GameServer doesn't care too much what any of this means. Your Player has an avatar with a 'Top' and 'Bottom' component. 'Top' components have two options, as do 'Bottom' components.  Think of a graphical way to render an avatar based on the specific combination of 'Top' and 'Bottom'.  Allow the player to change these in a graphical way and post the updated avatar details back to the server. (Use the player key and api token : Update Player)
 
