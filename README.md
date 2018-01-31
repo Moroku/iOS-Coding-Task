@@ -25,7 +25,7 @@ We'd like you to :
 
 1: Connect to the GameServer and retrieve the player data, render it in an exciting and cool way. Be sure to show the player name, points and any achievements they have unlocked. (Use the player key and api token : Get players/<player_id>)
 
-2: We created an external event called 'Magic' we'd like you send that event to the server for the chosen player (maybe in response to a button push).  In your response you should get a message showing that the points total has increased. Show the player that this has happened in an interesting way. (Use the admin key and api token : POST admin/player_external_events). Note that this request requires the player name and event id to be subimtted rather than player id.
+2: We created an external event called 'Magic' we'd like you send that event to the server for the chosen player (maybe in response to a button push).  In your response you should get a message showing that the points total has increased. Show the player that this has happened in an interesting way. (Use the admin key and api token : POST admin/player_external_events). Note that this request requires the player name and event id to be submitted rather than player id.
 
 3: We created another external event called 'Rainbow' which will result in the player being awarded with an achievement.  Make a nice animation to show that this happened. (Use the admin key and api token : POST admin/player_external_event )
 
@@ -45,7 +45,7 @@ And some tests around some of the functionality you've created
 
 ## Encryption
 
-The GameSystem Server uses HMAC encryption to secure API calls.  Documentation is below but in the meantime, we've provided you with a utility class that will help you get started.
+The GameSystem Server uses HMAC encryption to secure API calls. Documentation is below but in the meantime, we've provided you with a utility class that will help you get started.
 
 
 Here's how you use it:
