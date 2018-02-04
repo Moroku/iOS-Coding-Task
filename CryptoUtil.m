@@ -219,7 +219,7 @@ NSString * const kHttpDate = @"Date";
                        kUtcDate          : utcDate,
                        kHmacSha1         : hmac};
     } else {
-        DDLogError( @"Invalid parameter in request to HMAC_SHA1_WithContent:resourcePath:httpMethod:secretKey:");
+        NSLog( @"Invalid parameter in request to HMAC_SHA1_WithContent:resourcePath:httpMethod:secretKey:");
     }
     return resultDict;
 }
